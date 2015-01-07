@@ -11,3 +11,27 @@ nav ul li {
 nav ul {
 	margin-left: 0px;
 }
+
+// label, input {
+// 	display: block;
+// 	margin: 0 50%;
+// }
+
+#form {
+	width: 500px;
+	height: 400px;
+	display: block;
+	margin: 0 30%;
+	text-align: center;
+
+	li {
+		list-style-type: none;
+	}
+
+	label, input {
+		display: block;
+	}
+	input {
+		margin: 0 35%;
+	}
+}
