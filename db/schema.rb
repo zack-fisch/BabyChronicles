@@ -11,18 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150107004937) do
+ActiveRecord::Schema.define(version: 20150107014715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "children", force: true do |t|
-    t.text     "bio"
-    t.date     "birthday"
-    t.text     "parent1"
-    t.text     "paretn2"
+  create_table "kids", force: true do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "parent1"
+    t.string   "parent2"
+    t.text     "parent1bio"
+    t.text     "parent2bio"
+    t.text     "bio"
+    t.date     "birthday"
   end
 
   create_table "users", force: true do |t|
