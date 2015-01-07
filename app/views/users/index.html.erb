@@ -1,0 +1,6 @@
+<% @users.each do |user| %>
+	<h2> User ID: <%= user.id %> | User Email: <%= user.email %> |
+	</h2>
+	<%= link_to 'Show User', user %>
+<% end %>
+
