@@ -11,6 +11,19 @@
 		<ul>
 			<li> <%= link_to 'Users Index', root_path %> </li>
 			<li> <%= link_to 'Create New User', new_user_path %></li>
+			 <% if current_user %>
+				<li> <%= link_to "Log Out", session_path("current"), method: :delete %></li>
+				<li>
+					Signed in as <%= current_user.email %>
+				</li>
+			<% else %>
+			<li>
+				<%= link_to "New Account", new_user_path %>
+			</li>
+				<li>
+					<%= link_to "Log in", new_session_path %>
+			<% end %>
+				</li>
 		</ul>
 	</nav>
 
