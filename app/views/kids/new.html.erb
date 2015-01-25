@@ -1,0 +1,6 @@
+<%= form_for([@user, @kid]) do |f| %>
+	<%= f.label :bio %>
+	<%= f.text_field :bio %>
+
+	<%= f.submit "Create New Kid" %>
+<% end %>

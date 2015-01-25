@@ -1,11 +1,14 @@
 <h2> User Id: <%= @user.id %> | User Email: <%= @user.email %> | Edit User: <%= link_to 'Edit User', edit_user_path(@user) %></h2>
 
 <% if @user.kids.any? %>
-	<p><%= @user.email %> has <%= pluralize(@kids.count, 'Child') %></p>
-<% end %>
+	<p><%= @user.email %> has <%= pluralize(@user.kids.count, 'Child') %></p>
 
-<h5>
-	<% @kids.each do |kid| %>
+	<h5>
+	<% @user.kids.each do |kid| %>
 		<%= kid.bio %>
 	<% end %>
 </h5>
+<% end %>
+
+
+
