@@ -5,9 +5,18 @@
 
 	<h5>
 	<% @user.kids.each do |kid| %>
-		<%= kid.bio %>
+		<p> Kid Bio: <%= kid.bio %> </p>
+		<p> Parent 1: <%= kid.parent1 %> </p>
+		<p> Parent 1 Bio: <%= kid.parent1bio %> </p>
+		<p> Parent 2: <%= kid.parent2bio %> </p>
+		<p>Birthday: <%= kid.birthday %></p>
+
 	<% end %>
-</h5>
+	</h5>
+
+<% else %>
+	<p><%= @user.email %> has no children yet!</p>
+
 <% end %>
 
 

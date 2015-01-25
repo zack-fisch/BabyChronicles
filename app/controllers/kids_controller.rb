@@ -11,7 +11,8 @@ class KidsController < ApplicationController
 		if @kid.save 
 			redirect_to @user
 		else
-			render :new
+			flash[:notice] = "Please fill in all fields"
+			redirect_to new_user_kid_path
 		end
 	end
 
