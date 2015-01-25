@@ -51,5 +51,18 @@ background-color: #fff;
 	cursor: pointer;
 }
 
+#login {
+	height: 42px;
+	width: 90px;
+	border-radius: 42px;
+	background-color: #b9cf43;
+	margin-top: 1em;
+}
+
+#login  a {
+	color: #fff;
+	margin-top: -1em;
+	margin-right: 1.5em;
+}
 
 
