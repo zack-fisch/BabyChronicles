@@ -2,5 +2,20 @@
 	<%= f.label :bio %>
 	<%= f.text_field :bio %>
 
+	<%= f.label "Parent 1 Name" %>
+	<%= f.text_field :parent1 %>
+
+	<%= f.label "Parent 1 Bio" %>
+	<%= f.text_field :parent1bio %>
+
+	<%= f.label "Parent 2 Name" %>
+	<%= f.text_field :parent2 %>
+
+	<%= f.label "Parent 2 Bio" %>
+	<%= f.text_field :parent2bio %>
+
+	<%= f.label "Enter Kids Birthday" %>
+	<%= f.date_field :birthday%>
+
 	<%= f.submit "Create New Kid" %>
 <% end %>
