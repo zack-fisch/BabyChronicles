@@ -8,13 +8,17 @@
 							<a href="http://www.babychronicles.com/baby_chronicles_books-86.html">Books</a>
 						</li>
 						<li id='dropdown'>
-							<%= current_user.email %> ▾
-								<ul id='dropdown-list'>
-									<li>My Account</li>
-									<li>Logout</li>
-								</ul>
+					   <span id='dropdown-email'> <%= current_user.email %> ▾ </span>
+					        <ul id='dropdown-list'>
+					          <%= link_to(current_user) do %>
+					             <li>My Account</li>
+					          <% end %>
+					          <%= link_to session_path("current"), method: :delete do %>
+					            	<li>Log Out</li>
+					           <% end %>
+					          
+					        </ul>
 						</li>
-						<li> <%= link_to "Log Out", session_path("current"), method: :delete %></li>
 							<!-- <li> <%= link_to "Create New Child", new_user_kid_path(current_user)%> </li> -->
 				<% else %>
 						<li>
