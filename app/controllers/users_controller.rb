@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 		@user = User.create(user_params)
 		if @user.save
 			redirect_to @user, notice: "Signed up!"
-			UserMailer.welcome_email(@user).deliver_later
+			# UserMailer.welcome_email(@user).deliver_later
 		else
 			render :new
 		end
