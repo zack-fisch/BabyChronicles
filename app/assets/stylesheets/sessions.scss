@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.spacer-100 {
+	height: 100px;
+}
+
  #login-screen-background {
 	background-image: 
 	-moz-linear-gradient( 90deg, rgb(89,193,220) 80%, rgb(1,149,195) 100%);
@@ -10,4 +14,110 @@
   background-image: 
   -ms-linear-gradient( 90deg, rgb(89,193,220) 80%, rgb(1,149,195) 100%);
   height:100vh;
+
+  form {
+  	height: auto;
+  	width: 530px;
+  	background: red;
+  	margin: 0 auto;
+  	background: white;
+  	border-radius: 2px;
+
+  	label {
+  		font-family: sans-serif;
+  		color: #B5BABC;
+  		font-size: 1em;
+  		text-align: left;
+  		width: 320px;
+  		margin: 0 auto;
+  		margin-bottom: 8px;
+  		display: block;
+  	}
+
+  	#forgot {
+  		font-family: sans-serif;
+  		color: #36B1DA;
+  		font-size: 1em;
+  		text-align: center;
+  		text-decoration: none;
+  		display: block;
+
+  		&:hover {
+  			text-decoration: underline;
+  		}
+  	}
+
+  	input {
+			display: block;
+			margin: 0 auto;
+			width: 314px;
+			height: 44px;
+			margin-bottom: 20px;
+			font-size: 1.2em;
+  	}
+	
+		p {
+			text-align: center;
+			color: #9AA3A6;
+			font-family: sans-serif;
+
+			a {
+				text-decoration: none;
+				color: #36B1DA;
+
+				&:hover {
+  			text-decoration: underline;
+  		}
+			}
+
+		}
+
+		input[type='submit'] {
+			width: 230px;
+			height: 54px;
+			border-radius: 54px;
+			color: white;
+			background-color: #B9CF43;
+			border: 0px;
+			margin-top: 1.8em;
+			-moz-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+		 	-webkit-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				cursor: pointer;
+				background-color: #36B1DA;
+
+			}
+
+			&:active {
+				background-color: #2B8EAE;
+				-moz-transition: all 0s ease-in;
+				-o-transition: all 0s ease-in;
+		 		-webkit-transition: all 0s ease-in;
+				transition: all 0s ease-in;
+			}
+		}
+		& #no-account {
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
+  }
  }
+
+ .title-text {
+ 	padding-top: 70px;
+ 	font-size: 2em;
+ 	font-family: sans-serif;
+ 	color: #B1C2C8;
+ 	text-align: center;
+ 	font-weight: 300;
+ 	padding-bottom: 45px;
+ }
+
+

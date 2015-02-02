@@ -1,12 +1,18 @@
-<div id='login-screen-background'>
-	<%= form_tag sessions_path do %>
 
+<div id='login-screen-background'>
+	<div class='spacer-100'> </div>
+	<%= form_tag sessions_path do %>
+		<p class='title-text'>LOGIN</p>
 		<%= label_tag :email %>
 		<%= text_field_tag :email %>
 
 		<%= label_tag :password %>
 		<%= password_field_tag :password %>
 
-		<%= submit_tag 'Log in'%>
+		<%= link_to 'Forgot Password?', 'http://www.google.ca', id: 'forgot' %>
+
+		<%= submit_tag 'LOGIN'%>
+
+		<p id='no-account'>Don't have an account? <%= link_to 'Sign up now!', new_user_path %></p>
 	<% end %>
 </div>
