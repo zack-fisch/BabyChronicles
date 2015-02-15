@@ -3,6 +3,13 @@
 	<div class='spacer-100'> </div>
 	<%= form_tag sessions_path do %>
 		<p class='title-text'>LOGIN</p>
+
+		<% if flash.now[:error] %>
+			<div id='login-error'>
+				<p id='error-text'><%= flash.now[:error] %></p>
+			</div>
+		<% end %>
+
 		<%= label_tag :email %>
 		<%= text_field_tag :email %>
 
