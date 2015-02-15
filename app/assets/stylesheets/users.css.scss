@@ -12,21 +12,106 @@ nav ul {
 	margin-left: 0px;
 }
 
-#form {
-	width: 500px;
-	height: 400px;
-	display: block;
-	margin: 0 30%;
-	text-align: center;
+#signup-screen-background {
+	background: #0195c3;
+	background-image: url(stars.png); /* fallback */
+	background-image: url(stars.png), -webkit-gradient(linear, left top, left bottom, from(#0195c3), to(#59c1dc)); /* Saf4+, Chrome */
+	background-image: url(stars.png), -webkit-linear-gradient(top, #0195c3, #59c1dc); /* Chrome 10+, Saf5.1+ */
+	background-image: url(stars.png),    -moz-linear-gradient(top, #0195c3, #59c1dc); /* FF3.6+ */
+	background-image: url(stars.png),     -ms-linear-gradient(top, #0195c3, #59c1dc); /* IE10 */
+	background-image: url(stars.png),      -o-linear-gradient(top, #0195c3, #59c1dc); /* Opera 11.10+ */
+	background-image: url(stars.png),         linear-gradient(top bottom, #0195c3, #59c1dc); /* W3C */
+	height: 100vh;
 
-	li {
-		list-style-type: none;
+  form {
+  	height: auto;
+  	width: 530px;
+  	background: red;
+  	margin: 0 auto;
+  	background: white;
+  	border-radius: 2px;
 	}
 
-	label, input {
-		display: block;
-	}
-	input {
-		margin: 0 35%;
-	}
+	label {
+  		font-family: sans-serif;
+  		color: #B5BABC;
+  		font-size: 1em;
+  		text-align: left;
+  		width: 320px;
+  		margin: 0 auto;
+  		margin-bottom: 8px;
+  		display: block;
+  	}
+
+  	input {
+			display: block;
+			margin: 0 auto;
+			width: 314px;
+			height: 44px;
+			margin-bottom: 20px;
+			font-size: 1.2em;
+  	}
+	
+		p {
+			text-align: center;
+			color: #9AA3A6;
+			font-family: sans-serif;
+
+			a {
+				text-decoration: none;
+				color: #36B1DA;
+
+				&:hover {
+  			text-decoration: underline;
+  		}
+			}
+
+		}
+
+  input[type='submit'] {
+			width: 230px;
+			height: 54px;
+			border-radius: 54px;
+			color: white;
+			background-color: #B9CF43;
+			border: 0px;
+			margin-top: 1.8em;
+			-moz-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+		 	-webkit-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				cursor: pointer;
+				background-color: #36B1DA;
+
+			}
+
+			&:active {
+				background-color: #2B8EAE;
+				-moz-transition: all 0s ease-in;
+				-o-transition: all 0s ease-in;
+		 		-webkit-transition: all 0s ease-in;
+				transition: all 0s ease-in;
+			}
+		}	
+
+		& #yes-account {
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
 }
+
+.title-text {
+ 	padding-top: 70px;
+ 	font-size: 2em;
+ 	font-family: sans-serif;
+ 	color: #B1C2C8;
+ 	text-align: center;
+ 	font-weight: 300;
+ 	padding-bottom: 45px;
+ }

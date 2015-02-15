@@ -1,4 +1,4 @@
-<div id='form'>
+<div id='signup-screen-background'>
 	<% if @user.errors.any? %>
 	  <div id="error_explanation">
 	    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this User from being saved:</h2>
@@ -10,9 +10,12 @@
 	    </ul>
 	  </div>
 	<% end %>
-
+	
+	<div class='spacer-100'></div>
 	<%= form_for @user do |f| %>
-	   <%= f.label 'Email:' %>
+
+		<p class='title-text'> Sign up </p>
+	   <%= f.label 'Email:'%>
 	   <%= f.text_field :email %>
 	   <%= f.label 'Password:' %>
 	   <%= f.password_field :password %>
@@ -20,6 +23,8 @@
 	   <%= f.password_field :password_confirmation %>
 	   
 	   <%= f.submit "Submit" %>
+
+	   <p id='yes-account'>Have an account? <%= link_to 'Login!', new_session_path %></p>
 
 	<% end %>
 </div>

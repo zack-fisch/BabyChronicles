@@ -34,7 +34,7 @@ width: 100%;
 border-bottom: solid 1px #ebebeb;
 opacity: 80%;
 background-color: #fff;
-/*position: fixed;*/
+
 }
 
 #nav-header {
@@ -150,6 +150,7 @@ background-color: #fff;
 #dropdown:hover {
 	cursor: pointer;
 }
+
 
 
 

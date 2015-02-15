@@ -3,17 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .spacer-100 {
-	height: 100px;
+	height: 60px;
 }
 
  #login-screen-background {
-	background-image: 
-	-moz-linear-gradient( 90deg, rgb(89,193,220) 80%, rgb(1,149,195) 100%);
-  background-image: 
-  -webkit-linear-gradient( 90deg, rgb(89,193,220) 80%, rgb(1,149,195) 100%);
-  background-image: 
-  -ms-linear-gradient( 90deg, rgb(89,193,220) 80%, rgb(1,149,195) 100%);
-  height:100vh;
+background: #0195c3;
+	background-image: url(stars.png); /* fallback */
+	background-image: url(stars.png), -webkit-gradient(linear, left top, left bottom, from(#0195c3), to(#59c1dc)); /* Saf4+, Chrome */
+	background-image: url(stars.png), -webkit-linear-gradient(top, #0195c3, #59c1dc); /* Chrome 10+, Saf5.1+ */
+	background-image: url(stars.png),    -moz-linear-gradient(top, #0195c3, #59c1dc); /* FF3.6+ */
+	background-image: url(stars.png),     -ms-linear-gradient(top, #0195c3, #59c1dc); /* IE10 */
+	background-image: url(stars.png),      -o-linear-gradient(top, #0195c3, #59c1dc); /* Opera 11.10+ */
+	background-image: url(stars.png),         linear-gradient(top bottom, #0195c3, #59c1dc); /* W3C */
+	height: 100vh;
 
   form {
   	height: auto;
@@ -134,5 +136,9 @@
 #error-text {
  		color: #f0315e;
  	}
+
+.error {
+	background: red;
+}
 
 

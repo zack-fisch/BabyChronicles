@@ -9,12 +9,24 @@
 				<p id='error-text'><%= flash.now[:error] %></p>
 			</div>
 		<% end %>
+		
+		<% if flash.now[:error] %>
 
-		<%= label_tag :email %>
-		<%= text_field_tag :email %>
+			<%= label_tag :email %>
+			<%= text_field_tag :email, nil, class: "error"%>
 
-		<%= label_tag :password %>
-		<%= password_field_tag :password %>
+			<%= label_tag :password %>
+			<%= password_field_tag :password, nil, class: "error" %>
+
+		<% else %>
+		
+			<%= label_tag :email %>
+			<%= text_field_tag :email%>
+
+			<%= label_tag :password %>
+			<%= password_field_tag :password%>
+		
+		<% end %>
 
 		<%= link_to 'Forgot Password?', 'http://www.google.ca', id: 'forgot' %>
 
