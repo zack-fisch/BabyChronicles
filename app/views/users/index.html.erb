@@ -1,6 +1,75 @@
-<% @users.each do |user| %>
-	<h2> User ID: <%= user.id %> | User Email: <%= user.email %> |
-	</h2>
-	<%= link_to 'Show User', user %>
-<% end %>
+<div id='above-the-fold'>
+	<p class='tagline-grey'>Your baby's first website</p>
+	
+	<%= link_to new_user_path do %>
+		<div class='cta-1'>
+			<p>Get started for free!</p>
+		</div>
+	<% end %>
+	<div class='spacer-50'></div>
+	<%= image_tag('hero_image.png', id: 'hero_image') %>
+</div>
 
+<div id='below-the-fold'>
+		<p class='tagline-grey'>What's this all about?</p>
+
+		<p class='landing-regular-text'>
+			Make a custom website dedicated to your baby in just 10 minutes - <b>no design, no code, just information. </b>
+			<br>
+			Share the site with your family and friends to keep them updated.
+			<br>
+			Post pictures, bios, statistics and more.
+		</p>
+		
+		<%= link_to new_user_path do %>
+			<div class='cta-1'>
+				<p>Get started for free!</p>
+			</div>
+		<% end %>
+
+		<div class='spacer-50'> </div>
+</div>
+
+<div id='landing-holder'>
+
+	<div id='landing-boy' class='landing-half'>
+
+		<p class='tagline-white'>Your baby boy</p>
+
+		<%= image_tag('boy_image.png', class: 'landing-baby-image') %>
+
+		<p class='landing-white-text'> Give your little muscle man the website he deserves.</p>
+
+		<%= link_to new_user_path do %>
+			<div class='cta-1'>
+				<p>Get started for free!</p>
+			</div>
+		<% end %>
+
+		<div class='spacer-50'></div>
+	</div>
+
+	<div id='landing-girl' class='landing-half'>
+
+		<p class='tagline-white'>Your baby girl</p>
+
+		<%= image_tag('girl_image.png', class: 'landing-baby-image') %>
+
+		<p class='landing-white-text'> Give your little princess the website she deserves.</p>
+
+		<%= link_to new_user_path do %>
+			<div class='cta-1'>
+				<p>Get started for free!</p>
+			</div>
+		<% end %>
+
+		<div class='spacer-50'></div>
+
+	</div>
+</div>
+
+
+<div id='landing-footer'>
+	<p>Designed and Developed by Dropset</p>
+
+</div>

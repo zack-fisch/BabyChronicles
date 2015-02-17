@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Global CSS */
+
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
@@ -11,6 +13,17 @@ nav ul li {
 nav ul {
 	margin-left: 0px;
 }
+
+a {
+	text-decoration: none;
+}
+
+.spacer-50 {
+	height: 50px;
+}
+
+
+/* SIGNUP PAGE */
 
 #signup-screen-background {
 	background: #0195c3;
@@ -115,3 +128,138 @@ nav ul {
  	font-weight: 300;
  	padding-bottom: 45px;
  }
+
+ /* LANDING PAGE */
+
+	#above-the-fold {
+		width: 100%;
+
+		#hero_image {
+			display: block;
+			margin: 0 auto;
+			max-width: 80%;
+		}
+	}
+
+ .tagline-grey {
+ 	padding-top: 60px;
+ 	width: 100%;
+ 	text-align: center;
+ 	color: #b1c2c8;
+ 	font-size: 2em;
+ 	font-family: sans-serif;
+ }
+
+ .tagline-white {
+ 	padding-top: 60px;
+ 	width: 100%;
+ 	text-align: center;
+ 	color: #fff;
+ 	font-size: 2em;
+ 	font-family: sans-serif;
+ }
+
+.cta-1 {
+	margin: 0 auto;
+	font-family: sans-serif;
+	width: 230px;
+	height: 54px;
+	line-height: 54px;
+	border-radius: 54px;
+	text-align: center;
+	color: white;
+	background-color: #B9CF43;
+	border: 0px;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	text-decoration: none;
+	font-size: 1em;
+	margin-top: 40px;
+
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: #36B1DA	
+		}
+
+		&:active {
+			background-color: #2B8EAE;
+			-moz-transition: all 0s ease-in;
+			-o-transition: all 0s ease-in;
+			-webkit-transition: all 0s ease-in;
+			transition: all 0s ease-in;
+			}
+}
+
+#below-the-fold {
+	width: 100%;
+	background-color: #f4f7f9;
+
+	.landing-regular-text {
+		margin-top: 40px;
+		font-size: 1em;	
+		font-family: sans-serif;
+		color: #7d888c;
+		text-align: center;
+		line-height: 1.5em;
+	}
+}
+
+#landing-holder {
+	width: 100%;
+	height: auto;
+
+	.landing-half {
+		width: 50%;
+		display: inline-block;
+		height: 100%;
+	}
+
+	#landing-boy {
+		float: left;
+		background-color: #36b1da;
+		height: 100%;
+	}
+
+	#landing-girl {
+		float: right;
+		background-color: #e692c1;
+		
+	}
+
+	.landing-baby-image {
+		display: block;
+		margin: 0 auto;
+		max-width: 90%;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	.landing-white-text {
+		font-size: 1em;	
+		font-family: sans-serif;
+		color: #fff;
+		text-align: center;
+		line-height: 1.5em;
+	}
+}
+
+#landing-footer {
+	background-color: #fff;
+	height: 70px;
+	width: 100%;
+	color: #b1c2c8;
+	text-align: center;
+	line-height: 70px;
+	font-family: sans-serif;
+	clear: both;
+}
+
+
+
